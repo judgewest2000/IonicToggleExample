@@ -7,6 +7,12 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
+  displaySection = false;
+
+  displaySectionToggle() {
+    this.displaySection = !this.displaySection;
+  }
+
   constructor(public navCtrl: NavController) {
 
   }
